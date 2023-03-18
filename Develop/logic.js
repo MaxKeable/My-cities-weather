@@ -1,3 +1,5 @@
+
+
 var current = document.getElementById("current-day");
 
 var currentdaydisplay = dayjs().format("dddd, MMMM D, YYYY");

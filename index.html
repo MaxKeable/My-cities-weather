@@ -19,24 +19,27 @@
     <link rel="stylesheet" href="./Develop/style.css" />
   </head>
   <body>
-    <div class="search-content">
-    <div class="container">
-      <h1>Todays Weather</h1>
-      <div>
-        <h3 id="current-day"></h3>
+    <div class="search-content container square-box d-flex flex-column justify-content-center align-items-center">
+      <div class="container">
+        <h1 class="text-center">Today's Weather</h1>
+        <div>
+          <h3 class="text-center" id="current-day"></h3>
+        <div>
+            <hr class="line">
+        </div>
+        </div>
       </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Location"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+      </div>
+      <button type="button" class="btn btn-warning">SEARCH</button>
     </div>
-    <div class="input-group mb-3">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Location"
-        aria-label="Recipient's username"
-        aria-describedby="basic-addon2"
-      />
-    </div>
-    <button type="button" class="btn btn-warning">Search</button>
-</div>
     <div class="card hide" style="width: 18rem">
       <img class="card-img-top" src="..." alt="Card image cap" />
       <div class="card-body">

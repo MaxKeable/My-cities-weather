@@ -1,48 +1,68 @@
 body {
     background-color: #2E0249;
     font-family: 'Sono', sans-serif;
-    display: flex;
+
 }
 
 .search-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    min-height: 100vh;
 }
 
 h1 {
     color: #F900BF;
-    margin: 45% 0 2% 10%;
+    font-size: 3.25rem;
 }
 
 #current-day {
     color: #9900F0; 
-    margin: 0 auto 7% auto;
+}
 
+.line {
+    border-top: 3px solid #F900BF;
+    max-width: 350px;
+    margin: 10px auto 5px auto;
+    box-shadow: 0 3px 5px #F900BF ;
 }
 
 .form-control {
     background-color: #865DFF;
     border: #865DFF;
     color: #FFFFFF;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0 3px 10px #4700D8;
 }
 
 .form-control::placeholder { 
     color: #FFFFFF;
     opacity: 1; 
+    font-size: 1.25em;
   }
 
+.form-control:focus { 
+    background-color: #865DFF;
+    color: #FFFFFF;
+}
+
 .btn {
-    background-color: #F900BF;
+    background-color: #F806CC;
+    font-size: 1.25em;
     border: #F900BF;
-    padding: 2% 10%;
+    padding: 1% 10%;
 }
 
 .btn:hover {
-    background-color: #FFA3FD;
-    border: #9900F0;
+    transition: all 0.2s ease-in-out;
+    background-color: #F900BF;
+    border: 2px solid #F900BF;
+    letter-spacing: 0.25em;
+    color: #2E0249;
+    box-shadow: 0 5px 15px #F900BF;
+}
+
+.btn:focus {
+    background-color: #F900BF;
+    border: #F900BF;
     color: #2E0249;
 }
 
