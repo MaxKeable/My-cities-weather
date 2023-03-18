@@ -1,0 +1,59 @@
+body {
+    background-color: #2E0249;
+    font-family: 'Sono', sans-serif;
+    display: flex;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    color: #F900BF;
+    margin: 45% 0 2% 10%;
+}
+
+#current-day {
+    color: #9900F0; 
+    margin: 0 auto 7% auto;
+
+}
+
+.form-control {
+    background-color: #865DFF;
+    border: #865DFF;
+    color: #FFFFFF;
+}
+
+.form-control::placeholder { 
+    color: #FFFFFF;
+    opacity: 1; 
+  }
+
+.btn {
+    background-color: #F900BF;
+    border: #F900BF;
+    padding: 2% 10%;
+}
+
+.btn:hover {
+    background-color: #FFA3FD;
+    border: #9900F0;
+    color: #2E0249;
+}
+
+.card {
+    background-color: #F900BF;
+    color: #2E0249;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
