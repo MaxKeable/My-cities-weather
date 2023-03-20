@@ -46,11 +46,15 @@ button.on("click", function() {
     cityTitle.text(localStorage.getItem('city'));
     temp.text(weather[0].temp);
     }
+
+    fetch ('http://api.openweathermap.org/geo/1.0/direct?q=' +city+'&limit=5&appid='+APIKey).then (Response => Response.json()).then (data => {
+    console.log(data);
+})
   });
 
   
 
-// fetch ('http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={APIKey}').then (Response => Response.json()).then (data => {
+// fetch ('http://api.openweathermap.org/geo/1.0/direct?q=' +city+'&limit=5&appid='+APIKey).then (Response => Response.json()).then (data => {
 //     console.log(data);
 // })
 
