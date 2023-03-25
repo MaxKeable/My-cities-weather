@@ -23,96 +23,53 @@
     <link rel="stylesheet" href="./Develop/style.css" />
   </head>
   <body>
-    <div
-    id="search-content" class="search-content container square-box d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="container">
-        <h1 id="today-weather" class="text-center">Today's Weather</h1>
+    <nav>
+      <div class="nav-items">
+        <a href="">Your Locations</a>
+        <a href="">Preivous Location</a>
+      </div>
+    </nav>
+
+    <div class="search-content">
+      <div class="today">
+        <h1 id="today-weather" class="">Today's Weather</h1>
         <div>
-          <h3 class="text-center current-day" id="current-day"></h3>
-          <div>
-            <hr class="line" />
-          </div>
+          <h3 class="current-day" id="current-day"></h3>
         </div>
       </div>
-      <div class="input-group mb-3">
-        <input
-          id="search-input"
-          type="text"
-          class="form-control"
-          placeholder="Location"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
+
+      <div class="vertical-line"></div>
+      <div class="horizontal-line"></div>
+
+      <div class="input">
+        <div class="input-group">
+          <input
+            id="search-input"
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Location"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+        </div>
+        <button id="search-button" type="button" class="button">
+          SEARCH
+        </button>
       </div>
-      <button id="search-button" type="button" class="btn btn-warning">
-        SEARCH
-      </button>
     </div>
 
     <!-- card 1 -->
     <div
-       id="card-div" class="container d-flex flex-row flex-wrap justify-content-lg-around justify-content-sm-center hide"
+      id="card-div"
+      class="cards"
     >
-      <div id="card" class="card container" style="width: 18rem">
-        <img class="card-img-top" src="" alt="Card image cap" />
-        <div class="card-body">
-          <h5 id="city-title" class="card-title">Card title</h5>
-          <p class="card-text">
-            Here is the information about the weather of the city you searched.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li id="temp" class="list-group-item">Cras justo odio</li>
-          <li id="wind" class="list-group-item">Dapibus ac facilisis in</li>
-          <li id="humidity" class="list-group-item">Vestibulum at eros</li>
-          <li id="uv" class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <!-- card 2 -->
-      <div id="card" class="card container" style="width: 18rem">
-        <img class="card-img-top" src="" alt="Card image cap" />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Here is the information about the weather of the city you searched.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li id="temp" class="list-group-item">Cras justo odio</li>
-          <li id="wind" class="list-group-item">Dapibus ac facilisis in</li>
-          <li id="humidity" class="list-group-item">Vestibulum at eros</li>
-          <li id="uv" class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <!-- card 3 -->
-      <div id="card" class="card container" style="width: 18rem">
-        <img class="card-img-top" src="" alt="Card image cap" />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Here is the information about the weather of the city you searched.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li id="temp" class="list-group-item">Cras justo odio</li>
-          <li id="wind" class="list-group-item">Dapibus ac facilisis in</li>
-          <li id="humidity" class="list-group-item">Vestibulum at eros</li>
-          <li id="uv" class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
+    <div class="card">
+      <h3 id="city-title1"></h3>
+      <p id="date1"></p>
+      <p id="temperature1"></p>
+      <p id="humidity1"></p>
+      <p id="wind-speed1"></p>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
