@@ -38,6 +38,10 @@ The following image shows the web application's appearance and functionality:
 
 ![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
 
+## Deployed site and screenshot
+![Image 30-3-2023 at 10 45 pm](https://user-images.githubusercontent.com/88300023/228840551-ee8e4de1-cfb1-422e-bf3d-99a13423d432.jpg)
+https://maxkeable.github.io/Weather-4-you/
+
 ## Grading Requirements
 
 > **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
