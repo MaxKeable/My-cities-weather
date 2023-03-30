@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Today's weather</title>
+    <title>Weather 4 You</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -25,6 +27,7 @@
   <body>
     <nav>
       <div class="nav-items">
+        <img src="./Assets/Weather4You.png" alt="Logo">
         <a href="#card-div">Your Locations</a>
       </div>
     </nav>
@@ -57,8 +60,21 @@
       </div>
     </div>
 
+
     <div class="seperate">
       <p class="line"></p>
+    </div>
+
+    <div class="number-locations-div">
+      <div>
+        <button id="clear-local-storage">Clear your locations</button>
+      </div>
+      <div>
+        <button id="forcast-btn">5 Day Forcast</button>
+      </div>
+      <div>
+        <h4>You have <span id="number-locations">0</span> locations</h4>
+      </div>
     </div>
 
     <!-- card 1 -->
@@ -66,18 +82,12 @@
       id="card-div"
       class="cards"
     >
-    <!-- <div class="card">
-      <h3 id="city-title1"></h3>
-      <p id="temperature1"></p>
-      <p id="feels-like1"></p>
-      <p id="temp-min1"></p>
-      <p id="temp-max1"></p>
-      <p id="humidity1"></p>
-      <p id="wind-speed1"></p>
-    </div> -->
+    </div>
+    <div id="forcast-div"
+    class="forcast">
     </div>
 
-    <button id="clear-local-storage">Clear</button>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
