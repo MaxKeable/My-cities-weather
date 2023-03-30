@@ -25,7 +25,7 @@ button.on("click", function () {
         count++;
         console.log(count);
         localStorage.setItem('count', count);
-        fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=' + APIKey).then(Response => Response.json()).then(data => {
+        fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=' + APIKey).then(Response => Response.json()).then(data => {
             var lat = data[0].lat;
             var lon = data[0].lon;
             localStorage.setItem('lat' + count, lat);
@@ -122,7 +122,7 @@ if (localStorage.getItem('lat' + localStorage.getItem('count')) !== null && loca
                 $("#card-div").addClass("hide");
             
                 for (let i = 1; i <= localStorage.getItem('count'); i++) {
-                fetch('http://api.openweathermap.org/data/2.5/forecast?lat=' + localStorage.getItem('lat' + i) + '&lon=' + localStorage.getItem('lon' + i) + '&appid=' + APIKey + '&index=1200&units=metric').then(Response => Response.json()).then(data => {
+                fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + localStorage.getItem('lat' + i) + '&lon=' + localStorage.getItem('lon' + i) + '&appid=' + APIKey + '&index=1200&units=metric').then(Response => Response.json()).then(data => {
                     console.log(data);
 
                     var forcastItems = $("<div></div>").attr("class", "weather-details");
